@@ -1,0 +1,41 @@
+{
+    "crafting":{
+        "minecraft:iron_pickaxe": {
+            "scheme":[
+                ["minecraft:iron_ingot","minecraft:iron_ingot","minecraft:iron_ingot"],
+                ["","minecraft:stick",""],
+                ["","minecraft:stick",""]
+            ],
+            "input_c":"minecraft:barrel_2",
+            "count":1,
+            "result":"minecraft:iron_pickaxe"
+        },
+        "minecraft:oak_planks": {
+            "scheme":[
+                ["","minecraft:oak_log",""],
+                ["","",""],
+                ["","",""]
+            ],
+            "input_c":"minecraft:barrel_2",
+            "count":4,
+            "result":"minecraft:oak_planks",
+            "multi_craft":true,
+            "multi_limit":4
+        }
+    },
+    "custom":{
+        "minecraft:iron_ingot":{
+            "devices":{
+                "minecraft:furnace_5":{
+                    "2":["minecraft:coal",{"count":1}],
+                    "1":[{"tags":["minecraft:iron_ore","minecraft:raw_iron"]},{"count":8}],
+                    "3":["output"]
+                }
+            },
+            "count":8,
+            "result":"minecraft:iron_ingot",
+            "redstone":true
+        }
+    }
+}
+ 
